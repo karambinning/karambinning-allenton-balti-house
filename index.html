@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Allenton Balti House — Indian &amp; Sri Lankan takeaway, Osmaston Road, Derby</title>
+<meta name="description" content="Indian and Sri Lankan kitchen at 807 Osmaston Road, Derby. Delivery and collection until 1am, seven nights. DE1, DE21, DE22, DE23, DE24, DE73.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5EBD8;
+    --paper-warm:#EEDFC4;
+    --ink:#1A1310;
+    --ink-soft:#3A2D25;
+    --tandoor:#B23A1F;
+    --tandoor-deep:#7E2811;
+    --saffron:#E4A73C;
+    --cardamom:#2A3924;
+    --cardamom-soft:#4A5A40;
+    --display:"Fraunces", "Georgia", serif;
+    --body:"Newsreader", "Iowan Old Style", "Georgia", serif;
+    --rhythm:clamp(1rem,.7rem + .8vw,1.15rem);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:var(--rhythm);
+    line-height:1.55;
+    font-variation-settings:"opsz" 14;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:1;mix-blend-mode:multiply;opacity:.18;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.15  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+  h1,h2,h3,h4{
+    font-family:var(--display);
+    font-weight:900;
+    letter-spacing:-0.02em;
+    line-height:.95;
+    text-wrap:balance;
+    margin:0;
+    font-variation-settings:"opsz" 96;
+  }
+  p{text-wrap:pretty;hyphens:auto;margin:0 0 1em}
+  a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:.06em}
+  a:hover{color:var(--tandoor)}
+
+  /* ---------- top status strip ---------- */
+  .status{
+    position:relative;z-index:5;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:var(--body);
+    font-size:.82rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:.6rem clamp(1rem,4vw,2.5rem);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:1rem;
+    flex-wrap:wrap;
+  }
+  .status .dot{
+    display:inline-block;width:.55rem;height:.55rem;border-radius:999px;
+    background:var(--saffron);margin-right:.55rem;vertical-align:.05em;
+    box-shadow:0 0 0 0 rgba(228,167,60,.7);
+    animation:pulse 2.4s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(228,167,60,.7)}
+    70%{box-shadow:0 0 0 .6rem rgba(228,167,60,0)}
+    100%{box-shadow:0 0 0 0 rgba(228,167,60,0)}
+  }
+  .status a{color:var(--saffron);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px}
+  .status a:hover{border-bottom-color:var(--saffron);color:var(--saffron)}
+
+  /* ---------- masthead ---------- */
+  .mast{
+    position:relative;
+    padding:clamp(2.5rem,7vw,5.5rem) clamp(1rem,4vw,2.5rem) clamp(1.5rem,4vw,3rem);
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:clamp(1rem,3vw,3rem);
+    align-items:end;
+    border-bottom:2px solid var(--ink);
+  }
+  .mast .kicker{
+    font-family:var(--body);
+    font-size:.85rem;
+    letter-spacing:.34em;
+    text-transform:uppercase;
+    font-weight:500;
+    color:var(--tandoor);
+    margin-bottom:1.2rem;
+  }
+  .mast h1{
+    font-size:clamp(3.4rem,12vw,9.5rem);
+    font-variation-settings:"opsz" 144;
+    letter-spacing:-0.035em;
+  }
+  .mast h1 em{
+    font-style:italic;
+    font-weight:700;
+    color:var(--tandoor);
+    font-variation-settings:"opsz" 144;
+  }
+  .mast .lede{
+    margin-top:1.4rem;
+    max-width:36ch;
+    font-size:clamp(1.05rem,.7rem + .9vw,1.4rem);
+    font-variation-settings:"opsz" 20;
+    color:var(--ink-soft);
+  }
+  .mast aside{
+    font-family:var(--body);
+    font-size:.78rem;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    text-align:right;
+    color:var(--ink-soft);
+    line-height:1.8;
+    border-right:2px solid var(--ink);
+    padding-right:1.2rem;
+    align-self:end;
+    max-width:18ch;
+  }
+  .mast aside strong{display:block;color:var(--ink);font-weight:700;letter-spacing:.18em;margin-bottom:.4rem}
+  @media (max-width:740px){
+    .mast{grid-template-columns:1fr}
+    .mast aside{text-align:left;border-right:none;border-left:2px solid var(--ink);padding-right:0;padding-left:1rem;max-width:none}
+  }
+
+  /* ---------- marquee ---------- */
+  .marquee{
+    background:var(--saffron);
+    color:var(--ink);
+    overflow:hidden;
+    border-bottom:2px solid var(--ink);
+    padding:1.05rem 0;
+    position:relative;
+  }
+  .marquee__track{
+    display:inline-flex;
+    gap:3.2rem;
+    white-space:nowrap;
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(1.4rem,3.6vw,2.4rem);
+    letter-spacing:-0.01em;
+    animation:scroll 38s linear infinite;
+    padding-left:3rem;
+  }
+  .marquee__track span{display:inline-flex;align-items:center;gap:3.2rem}
+  .marquee__track span::after{
+    content:"✦";color:var(--tandoor-deep);font-size:.7em;
+  }
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* ---------- chef's recs ---------- */
+  .recs{
+    padding:clamp(3rem,7vw,6rem) clamp(1rem,4vw,2.5rem);
+    max-width:78rem;margin:0 auto;
+  }
+  .section-head{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    gap:1.5rem;
+    align-items:end;
+    margin-bottom:clamp(2rem,4vw,3.5rem);
+    padding-bottom:1.2rem;
+    border-bottom:1px solid var(--ink);
+  }
+  .section-head .no{
+    font-family:var(--display);font-style:italic;font-weight:400;
+    font-size:clamp(1.2rem,1.6vw,1.6rem);color:var(--tandoor);
+    font-variation-settings:"opsz" 20;
+  }
+  .section-head h2{
+    font-size:clamp(2.2rem,5.5vw,4.4rem);
+    font-variation-settings:"opsz" 80;
+  }
+  .section-head h2 em{font-style:italic;font-weight:700;color:var(--tandoor)}
+  .section-head .tag{
+    font-family:var(--body);font-size:.78rem;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--ink-soft);text-align:right;
+    max-width:14ch;line-height:1.6;
+  }
+  @media (max-width:640px){
+    .section-head{grid-template-columns:1fr;gap:.4rem}
+    .section-head .tag{text-align:left;max-width:none}
+  }
+  .recs-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));
+    gap:clamp(2rem,4vw,3.5rem) clamp(2.5rem,5vw,5rem);
+  }
+  .dish{
+    display:grid;grid-template-columns:1fr auto;
+    gap:.4rem 1.2rem;align-items:baseline;
+    padding-bottom:1.8rem;
+    border-bottom:1px dotted var(--ink-soft);
+  }
+  .dish h3{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(1.4rem,2.6vw,1.85rem);
+    font-variation-settings:"opsz" 36;
+    grid-column:1;
+    letter-spacing:-0.01em;
+    line-height:1.05;
+  }
+  .dish .price{
+    font-family:var(--display);
+    font-weight:900;
+    font-variation-settings:"opsz" 36;
+    font-size:clamp(1.4rem,2.6vw,1.85rem);
+    grid-column:2;
+    color:var(--tandoor);
+    white-space:nowrap;
+  }
+  .dish p{
+    grid-column:1 / -1;
+    margin:.3rem 0 0;
+    color:var(--ink-soft);
+    font-size:.98rem;
+    font-variation-settings:"opsz" 14;
+    max-width:38ch;
+  }
+  @supports (animation-timeline:view()){
+    .dish{animation:rise both;animation-timeline:view();animation-range:entry 0% cover 30%}
+    @keyframes rise{from{opacity:0;transform:translateY(1.4rem)}to{opacity:1;transform:none}}
+  }
+
+  /* ---------- breadth slab (cardamom green) ---------- */
+  .breadth{
+    background:var(--cardamom);
+    color:var(--paper);
+    padding:clamp(3rem,7vw,6rem) clamp(1rem,4vw,2.5rem);
+  }
+  .breadth .wrap{max-width:78rem;margin:0 auto}
+  .breadth .section-head{border-bottom-color:rgba(245,235,216,.35)}
+  .breadth .section-head .no{color:var(--saffron)}
+  .breadth .section-head h2 em{color:var(--saffron)}
+  .breadth .section-head .tag{color:rgba(245,235,216,.7)}
+  .breadth-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));
+    gap:1.2rem 2rem;
+    margin-top:1.5rem;
+  }
+  .breadth-grid li{
+    list-style:none;
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(1.1rem,1.8vw,1.5rem);
+    font-variation-settings:"opsz" 28;
+    border-bottom:1px solid rgba(245,235,216,.25);
+    padding:.65rem 0;
+    display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  }
+  .breadth-grid ul{margin:0;padding:0}
+  .breadth-grid li small{
+    font-family:var(--body);
+    font-weight:400;
+    font-size:.7rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--saffron);
+    font-variation-settings:"opsz" 8;
+  }
+  .breadth-foot{
+    margin-top:clamp(2.5rem,5vw,4rem);
+    display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end;
+    padding-top:1.8rem;border-top:1px solid rgba(245,235,216,.35);
+  }
+  .breadth-foot p{
+    font-family:var(--display);font-style:italic;font-weight:400;
+    font-variation-settings:"opsz" 28;
+    font-size:clamp(1.2rem,2.2vw,1.7rem);
+    color:rgba(245,235,216,.92);
+    max-width:46ch;margin:0;line-height:1.3;
+  }
+  .breadth-foot a{
+    font-family:var(--body);
+    font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;
+    text-decoration:none;color:var(--cardamom);
+    background:var(--saffron);
+    padding:1rem 1.6rem;border:2px solid var(--saffron);white-space:nowrap;
+    transition:background .2s,color .2s;
+  }
+  .breadth-foot a:hover{background:transparent;color:var(--saffron)}
+  @media (max-width:640px){
+    .breadth-foot{grid-template-columns:1fr}
+  }
+
+  /* ---------- deals slab (tandoor brick) ---------- */
+  .deals{
+    background:var(--tandoor);
+    color:var(--paper);
+    padding:clamp(3rem,7vw,6rem) clamp(1rem,4vw,2.5rem);
+  }
+  .deals .wrap{max-width:78rem;margin:0 auto}
+  .deals .section-head{border-bottom-color:rgba(245,235,216,.4)}
+  .deals .section-head .no{color:var(--saffron)}
+  .deals .section-head h2 em{color:var(--saffron);font-style:italic}
+  .deals .section-head .tag{color:rgba(245,235,216,.75)}
+  .deals-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));
+    gap:2.4rem 3rem;
+    margin-top:.5rem;
+  }
+  .deal{
+    border-top:2px solid var(--paper);
+    padding-top:1.3rem;
+  }
+  .deal h3{
+    font-family:var(--display);
+    font-weight:900;
+    font-variation-settings:"opsz" 60;
+    font-size:clamp(1.6rem,3vw,2.2rem);
+    line-height:1;
+    margin-bottom:.55rem;
+  }
+  .deal .from{
+    font-family:var(--display);font-style:italic;font-weight:400;
+    font-variation-settings:"opsz" 24;
+    font-size:1.05rem;color:var(--saffron);margin-bottom:.7rem;
+  }
+  .deal p{
+    font-size:.98rem;font-variation-settings:"opsz" 14;
+    color:rgba(245,235,216,.92);margin:0;max-width:34ch;
+  }
+
+  /* ---------- find us ---------- */
+  .find{
+    padding:clamp(3rem,7vw,6rem) clamp(1rem,4vw,2.5rem);
+    max-width:78rem;margin:0 auto;
+  }
+  .find-grid{
+    display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start;
+  }
+  @media (max-width:780px){.find-grid{grid-template-columns:1fr}}
+  .find h2{
+    font-size:clamp(2.4rem,6vw,5rem);
+    font-variation-settings:"opsz" 96;
+    margin-bottom:1.2rem;
+  }
+  .find h2 em{font-style:italic;font-weight:700;color:var(--tandoor)}
+  .find .letter{
+    font-family:var(--display);
+    font-weight:400;
+    font-variation-settings:"opsz" 60;
+    font-size:clamp(1.5rem,2.8vw,2.1rem);
+    line-height:1.25;
+    color:var(--ink);
+  }
+  .find .letter strong{font-weight:900}
+  .find .meta{
+    font-family:var(--body);
+    font-size:.84rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-top:1.8rem;
+    line-height:2;
+  }
+  .find .meta a{color:var(--tandoor);text-decoration:none;border-bottom:1px solid var(--tandoor)}
+  .hours{
+    background:var(--paper-warm);
+    border:2px solid var(--ink);
+    padding:1.8rem 1.6rem;
+  }
+  .hours h3{
+    font-family:var(--display);font-weight:900;
+    font-size:1.4rem;letter-spacing:-0.01em;
+    margin-bottom:1rem;
+    font-variation-settings:"opsz" 28;
+  }
+  .hours dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:.65rem 1rem}
+  .hours dt{
+    font-family:var(--body);
+    font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--ink-soft);align-self:baseline;
+  }
+  .hours dd{
+    margin:0;font-family:var(--display);font-weight:700;
+    font-variation-settings:"opsz" 18;font-size:1.05rem;color:var(--ink);
+    text-align:right;
+  }
+  .hours .ribbon{
+    margin-top:1.5rem;padding-top:1.2rem;border-top:1px dotted var(--ink);
+    font-family:var(--body);font-size:.82rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--tandoor-deep);font-weight:500;
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--ink);
+    color:var(--paper);
+    padding:clamp(2.5rem,5vw,4rem) clamp(1rem,4vw,2.5rem) 2rem;
+  }
+  .foot{
+    max-width:78rem;margin:0 auto;
+    display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.5rem;
+    align-items:start;
+  }
+  @media (max-width:780px){.foot{grid-template-columns:1fr;gap:2rem}}
+  .foot .wordmark{
+    font-family:var(--display);font-weight:900;
+    font-variation-settings:"opsz" 60;
+    font-size:clamp(1.8rem,3.6vw,2.6rem);
+    line-height:.95;letter-spacing:-0.025em;
+  }
+  .foot .wordmark em{font-style:italic;font-weight:700;color:var(--saffron)}
+  .foot p{font-size:.92rem;color:rgba(245,235,216,.8);margin-top:.8rem}
+  .foot h4{
+    font-family:var(--body);
+    font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;
+    font-weight:500;color:var(--saffron);margin-bottom:.9rem;
+  }
+  .foot ul{list-style:none;padding:0;margin:0;line-height:2}
+  .foot a{
+    color:var(--paper);text-decoration:none;border-bottom:1px solid transparent;
+  }
+  .foot a:hover{border-bottom-color:var(--saffron);color:var(--saffron)}
+  .legal{
+    max-width:78rem;margin:3rem auto 0;
+    padding-top:1.5rem;border-top:1px solid rgba(245,235,216,.2);
+    font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;
+    color:rgba(245,235,216,.5);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+  }
+</style>
+</head>
+<body>
+
+<!-- Top status strip -->
+<div class="status">
+  <span><span class="dot"></span>Open for delivery &amp; collection · DE1 · DE21 · DE22 · DE23 · DE24 · DE73</span>
+  <a href="https://www.allentonbaltihousederby.co.uk/" target="_blank" rel="noopener">Order online →</a>
+</div>
+
+<!-- Masthead -->
+<header class="mast">
+  <div>
+    <div class="kicker">Indian &amp; Sri Lankan Kitchen · est. Derby</div>
+    <h1>Allenton<br>Balti <em>House</em></h1>
+    <p class="lede">A late-evening kitchen on Osmaston Road. Tandoor curries, Sri Lankan specials, breads from the oven and a Full Moon on the menu — open every night until close to one.</p>
+  </div>
+  <aside>
+    <strong>Find us</strong>
+    807 Osmaston Rd<br>
+    Derby<br>
+    DE24 9BQ
+  </aside>
+</header>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Now delivering DE1</span>
+    <span>DE21</span>
+    <span>DE22</span>
+    <span>DE23</span>
+    <span>DE24</span>
+    <span>DE73</span>
+    <span>Open seven nights</span>
+    <span>Last orders 00:55</span>
+    <span>Indian · Sri Lankan · Tandoor</span>
+    <span>Now delivering DE1</span>
+    <span>DE21</span>
+    <span>DE22</span>
+    <span>DE23</span>
+    <span>DE24</span>
+    <span>DE73</span>
+    <span>Open seven nights</span>
+    <span>Last orders 00:55</span>
+    <span>Indian · Sri Lankan · Tandoor</span>
+  </div>
+</div>
+
+<!-- Chef's Recommendations -->
+<section class="recs">
+  <div class="section-head">
+    <div class="no">№ 01</div>
+    <h2>From the <em>chef's</em> own list</h2>
+    <div class="tag">A handful worth ordering</div>
+  </div>
+
+  <div class="recs-grid">
+    <article class="dish">
+      <h3>Full Moon Special Curry</h3>
+      <span class="price">£12.50</span>
+      <p>The kitchen's own recipe — rich, deeply spiced, served on the heavier side of medium. Ask for it hotter.</p>
+    </article>
+
+    <article class="dish">
+      <h3>Sri Lankan Special</h3>
+      <span class="price">Mkt</span>
+      <p>An island plate that doesn't usually sit alongside a balti menu. Bright, fragrant, coconut-finished.</p>
+    </article>
+
+    <article class="dish">
+      <h3>Prawn Omelette</h3>
+      <span class="price">Mkt</span>
+      <p>The other Sri Lankan curiosity — eggs folded around prawn, served warm. Different from anything else on the order.</p>
+    </article>
+
+    <article class="dish">
+      <h3>Chicken Tikka Masala</h3>
+      <span class="price">£11.00</span>
+      <p>The reliable one. Marinated tikka in a creamed tomato sauce that does what it's supposed to.</p>
+    </article>
+
+    <article class="dish">
+      <h3>Tandoori Chicken — Full</h3>
+      <span class="price">£12.00</span>
+      <p>Cooked on the bone in the tandoor. Crisp at the edges, smoke through to the centre.</p>
+    </article>
+
+    <article class="dish">
+      <h3>Mega Balti Special Kebab</h3>
+      <span class="price">£18.50</span>
+      <p>The kitchen's biggest plate. Mixed grill over a balti base, served with naan.</p>
+    </article>
+  </div>
+</section>
+
+<!-- Breadth (cardamom slab) -->
+<section class="breadth" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="no">№ 02</div>
+      <h2>Everything <em>else</em> on the menu</h2>
+      <div class="tag">Built for a long order</div>
+    </div>
+
+    <div class="breadth-grid">
+      <ul>
+        <li>Starters<small>Veg · Non-Veg · Seafood</small></li>
+        <li>Tandoori Mains<small>Specials</small></li>
+        <li>Curry Meals<small>Trad. + modern</small></li>
+        <li>Masala · Karahi · Balti<small>Specials</small></li>
+        <li>Biryani<small>Rice plates</small></li>
+        <li>Traditional Curries<small>Madras · Korma · Vindaloo</small></li>
+      </ul>
+      <ul>
+        <li>Rice Dishes<small>Pilau · Special</small></li>
+        <li>Vegetable Dishes<small>Sides + mains</small></li>
+        <li>Breads<small>From the oven</small></li>
+        <li>Kebabs<small>Mixed · Seekh · Tikka</small></li>
+        <li>English Dishes<small>For the plain order</small></li>
+        <li>Jacket Potatoes<small>Filled</small></li>
+      </ul>
+      <ul>
+        <li>Pizzas<small>Customisable</small></li>
+        <li>Garlic Bread<small>Loaded · plain</small></li>
+        <li>Wraps<small>Off the grill</small></li>
+        <li>Burgers<small>Beef · chicken</small></li>
+        <li>Southern Fried Chicken<small>By the piece</small></li>
+        <li>Drinks · Sauces · Extras<small>Round it off</small></li>
+      </ul>
+    </div>
+
+    <div class="breadth-foot">
+      <p>Eight kitchens' worth of menu under one roof — order Indian, finish with a pizza, send the kids' meal out with it. We work out of one ticket.</p>
+      <a href="https://www.allentonbaltihousederby.co.uk/" target="_blank" rel="noopener">See full menu →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Deals (tandoor slab) -->
+<section class="deals">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="no">№ 03</div>
+      <h2>Meal deals &amp; <em>kids' plates</em></h2>
+      <div class="tag">Priced to share</div>
+    </div>
+
+    <div class="deals-grid">
+      <article class="deal">
+        <h3>Pizza Meal Deal 1</h3>
+        <p class="from">From £7.90</p>
+        <p>A 10" pizza, sides and a drink. Built for a quick midweek order.</p>
+      </article>
+
+      <article class="deal">
+        <h3>Family Curry Deals</h3>
+        <p class="from">Multiple sizes</p>
+        <p>Curry plus rice, naan and side — sized to two, three or four. Choose the heat at the till.</p>
+      </article>
+
+      <article class="deal">
+        <h3>Kids' Meals</h3>
+        <p class="from">From £4.00</p>
+        <p>Smaller plates designed for the youngest at the table. Chicken nuggets, mini burgers, milder curry options.</p>
+      </article>
+
+      <article class="deal">
+        <h3>Chef's Recommendations</h3>
+        <p class="from">Curated weekly</p>
+        <p>The half-dozen dishes the kitchen is proudest of, listed first on the order screen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Find us / hours -->
+<section class="find" id="find">
+  <div class="find-grid">
+    <div>
+      <h2>Find <em>us</em>.</h2>
+      <p class="letter">
+        <strong>Allenton Balti House</strong><br>
+        807 Osmaston Road<br>
+        Derby <strong>DE24 9BQ</strong>
+      </p>
+      <p class="meta">
+        Order via <a href="https://www.allentonbaltihousederby.co.uk/" target="_blank" rel="noopener">our website</a><br>
+        Postcodes served · DE1 · DE21 · DE22 · DE23 · DE24 · DE73<br>
+        Late-night kitchen · last orders 00:55
+      </p>
+    </div>
+
+    <aside class="hours" aria-labelledby="hours-heading">
+      <h3 id="hours-heading">Opening hours</h3>
+      <dl>
+        <dt>Delivery · Mon–Sun</dt><dd>15:45 — 00:55</dd>
+        <dt>Collection · Mon–Sun</dt><dd>16:00 — 00:55</dd>
+      </dl>
+      <div class="ribbon">Open seven nights · last orders 00:55</div>
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div>
+      <div class="wordmark">Allenton Balti <em>House</em></div>
+      <p>An Indian and Sri Lankan kitchen at 807 Osmaston Road, serving south Derby until close to one in the morning, seven nights a week.</p>
+    </div>
+    <div>
+      <h4>Order</h4>
+      <ul>
+        <li><a href="https://www.allentonbaltihousederby.co.uk/" target="_blank" rel="noopener">Order online</a></li>
+        <li><a href="#menu">See the menu</a></li>
+        <li><a href="#find">Delivery postcodes</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Find us</h4>
+      <ul>
+        <li>807 Osmaston Road</li>
+        <li>Derby DE24 9BQ</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=807+Osmaston+Road+Derby+DE24+9BQ" target="_blank" rel="noopener">Open in Maps →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© Allenton Balti House · Derby</span>
+    <span>Indian · Sri Lankan · Tandoor</span>
+  </div>
+</footer>
+
+</body>
+</html>
